@@ -1,5 +1,8 @@
-document.body.innerHTML += "Hello JavaScript";
+document.body.innerHTML += "Welcome";
 //alert("Hello Dat.js");
 console.log("Hello Dat.js");
-console.log("Åh ÅH Åh");
-console.log("Halvt skridt frem og ét tilbage");
+function sayHello() {
+  document.querySelector("h3").textContent =
+    "Hej " + document.querySelector("input").value;
+}
+document.querySelector("button").addEventListener("click", sayHello);
